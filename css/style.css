@@ -21,7 +21,12 @@ body{
     height: 100vh;
     background-color: #0B2239;
 }
+/* SVG Web */
 #web{
+    display: block;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 25%;
     animation: fill 0.5s ease forwards 2.2s;
 }
 
@@ -40,12 +45,12 @@ body{
     stroke-dashoffset: 585px;
     animation: line-animation 2s ease forwards 0.6s;
 }
-
+/*  SVG Dev */
 #dev{
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
     animation: fill 0.5s ease forwards 3.5s;
 }
 #dev path:nth-child(1){
@@ -79,10 +84,11 @@ body{
     animation: line-animation 2s ease forwards 1.5s;
 }
 #dev path:nth-child(7){
-    stroke-dasharray: 483px;
-    stroke-dashoffset: 483px;
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
     animation: line-animation 2s ease forwards 1.8s;
 }
+/* 483 */
 #dev path:nth-child(8){
     stroke-dasharray: 551px;
     stroke-dashoffset: 551px;
@@ -107,23 +113,75 @@ body{
         fill:white;
     }
 }
-
+/* Arrow to go down */
 #down {
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:25%;
+    animation: pulse 2s ease-in-out infinite;
 }
+@keyframes pulse{
+0%   {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+50%  {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+100%  {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+}
+  
+/* Name of the developer */
 .name{
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 3em;
+    text-align: right;
+    margin-right: 15%;
+    animation:fadeIn ease 5s;
+    -webkit-animation:fadeIn ease 5s;
+    -moz-animation:fadeIn ease 5s;
+    -o-animation:fadeIn ease 5s;
+    -ms-animation:fadeIn ease 5s;
 }
-/* section{
-    height: 100vh;
-} */
+@keyframes fadeIn {
+    0%, 10%, 90%, 100% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0%, 10%, 90%, 100% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0%, 10%, 90%, 100% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0%, 10%, 90%, 100% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0%, 10%, 90%, 100% {opacity:0;}
+    100% {opacity:1;}
+  }
 /* Menu */
 section.menu{
     position: relative;
@@ -272,3 +330,46 @@ ul li:hover a::before{
     transition: all 200ms linear;
   }
   
+  /* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+    #web {
+        display: block;
+        margin-right: auto;
+        margin-left: 0%;
+        margin-top: 25%;
+        animation: fill 0.5s ease forwards 2.2s;
+    }
+    .name {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-size: 3em;
+        text-align: right;
+        margin-right: 0%;
+    }
+}
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+    #web {
+        display: block;
+        margin-right: auto;
+        margin-left: 0%;
+        margin-top: 25%;
+        width: 45%; 
+        height: auto;
+        animation: fill 0.5s ease forwards 2.2s;
+    }
+    .name {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-size: 2em;
+        text-align: right;
+        margin-right: 0%;
+    }
+    #down {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100%;
+    }
+}

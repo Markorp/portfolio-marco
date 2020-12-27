@@ -19,7 +19,7 @@ $(document).ready(function() {
     updateProgress();
     $(window).scroll(updateProgress);
 
-    var offset = 1050;
+    var offset = 100;
     var duration = 550;
 
     jQuery(window).on('scroll', function() {
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     jQuery('.progress-wrap').on('click', function(event) {
         event.preventDefault();
-        window.location.href = "#menu";
+        window.location.href = "#";
         // jQuery('html, body').animate({scrollTop: 0}, duration);
         return false;
     })

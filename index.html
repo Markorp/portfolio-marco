@@ -8,183 +8,333 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/solid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
 </head>
 <body>
-    <div class="container vh-100">
-        <div class="row h-75 mx-auto align-items-center ">
-            <div class="col-md-12">
-                <div class="row d-flex justify-content-center">
+    <div id="fullpage">
+        <!-- Home Section -->
+        <section class="section home vh-100" data-anchor="home" id="">
+            <div class="container vh-100">
+                <div class="row h-75 mx-auto align-items-center ">
                     <div class="col-md-12">
-                        <div class="row justify-content-start">
-                            <svg class="img-fluid" id="web" width="305" height="112" viewBox="0 0 305 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M143.321 6.6959L144.247 3.5H140.92H126.808H124.874L124.388 5.37145L104.722 81.0805L84.1486 5.34463L83.6475 3.5H81.736H67.048H65.1596L64.6433 5.31642L42.9767 81.5364L23.3892 5.37729L22.9064 3.5H20.968H7H3.70585L4.5922 6.67267L32.6722 107.185L33.188 109.031L35.1048 109.012L49.6488 108.868L51.4905 108.85L52.0189 107.085L73.7724 34.4441L94.7421 107.062L95.2638 108.868H97.144H111.832H113.71L114.233 107.064L143.321 6.6959Z" stroke="white" stroke-width="5"/>
-                                <path d="M210.18 49.352V46.852H207.68H173.604V18.3H212H214.5V15.8V5V2.5H212H158H155.5V5V105.512V108.012H158H212H214.5V105.512V94.712V92.212H212H173.604V62.652H207.68H210.18V60.152V49.352Z" stroke="white" stroke-width="5"/>
-                                <path d="M297.343 94.6159L297.35 94.6047L297.357 94.5934C300.211 90.0492 301.628 84.9767 301.628 79.44C301.628 75.0239 300.627 70.8481 298.628 66.9461C296.74 63.073 294.108 59.8079 290.746 57.1779C289.327 56.0347 287.831 55.0739 286.262 54.2987C289.194 52.6097 291.732 50.4847 293.853 47.9149C297.548 43.4588 299.324 37.9218 299.324 31.488C299.324 26.2488 298.007 21.4645 295.344 17.203C292.648 12.8894 288.646 9.56978 283.487 7.19331C278.273 4.6945 272.081 3.5 265 3.5H229H226.5V6V106.368V108.868H229H266.44C273.441 108.868 279.629 107.668 284.928 105.174L284.938 105.17L284.947 105.165C290.29 102.597 294.464 99.0941 297.343 94.6159ZM278.645 66.9449L278.659 66.9567L278.673 66.9684C281.865 69.6014 283.524 73.2224 283.524 78.144C283.524 82.9999 281.939 86.5237 278.942 89.0477C275.886 91.6206 271.444 93.068 265.288 93.068H244.604V62.644H264.856C270.863 62.644 275.37 64.1613 278.645 66.9449ZM264.136 46.844H244.604V19.3H263.848C269.841 19.3 274.019 20.6647 276.765 23.0181C279.485 25.3494 280.932 28.5922 280.932 33.072C280.932 37.5518 279.485 40.7946 276.765 43.1259C274.007 45.4899 269.914 46.844 264.136 46.844Z" stroke="white" stroke-width="5"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="row justify-content-center pt-3">
-                            <svg class="img-fluid" id="dev" width="762" height="113" viewBox="0 0 762 113" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M65.7232 101.705L65.734 101.7C74.2191 97.4575 80.7417 91.3585 85.2228 83.417C89.7911 75.3951 92.028 66.0268 92.028 55.4C92.028 44.7761 89.7923 35.4099 85.2265 27.3895C80.7509 19.3585 74.2341 13.2096 65.7501 8.96396C57.3604 4.62127 47.4984 2.5 36.248 2.5H5H2.5V5V105.368V107.868H5H36.248C47.4889 107.868 57.3405 105.846 65.7232 101.705ZM63.9759 27.911L63.9819 27.9173L63.9881 27.9235C70.3235 34.3469 73.636 43.3924 73.636 55.4C73.636 67.3127 70.3708 76.2581 64.1381 82.5823C57.9347 88.7819 48.7761 92.068 36.248 92.068H20.604V18.156H36.248C48.6592 18.156 57.7658 21.526 63.9759 27.911Z" stroke="white" stroke-width="5"/>
-                                <path d="M157.18 50.352V47.852H154.68H120.604V19.3H159H161.5V16.8V6V3.5H159H105H102.5V6V106.512V109.012H105H159H161.5V106.512V95.712V93.212H159H120.604V63.652H154.68H157.18V61.152V50.352Z" stroke="white" stroke-width="5"/>
-                                <path d="M267.203 6.88259L268.479 3.5H264.864H251.04H249.29L248.691 5.14407L219.504 85.242L190.317 5.14407L189.718 3.5H187.968H174H170.385L171.661 6.88259L209.533 107.251L210.143 108.868H211.872H226.992H228.721L229.331 107.251L267.203 6.88259Z" stroke="white" stroke-width="5"/>
-                                <path d="M329.18 50.352V47.852H326.68H292.604V19.3H331H333.5V16.8V6V3.5H331H277H274.5V6V106.512V109.012H277H331H333.5V106.512V95.712V93.212H331H292.604V63.652H326.68H329.18V61.152V50.352Z" stroke="white" stroke-width="5"/>
-                                <path d="M402.74 95.712V93.212H400.24H367.604V6V3.5H365.104H352H349.5V6V106.368V108.868H352H400.24H402.74V106.368V95.712Z" stroke="white" stroke-width="5"/>
-                                <path d="M587.201 58.054L587.202 58.0535C593.472 51.9924 596.604 44.3734 596.604 35.376C596.604 26.094 593.376 18.3543 586.876 12.3746C580.395 6.32374 571.095 3.5 559.4 3.5H527H524.5V6V106.368V108.868H527H540.104H542.604V106.368V66.964H559.4C571.449 66.964 580.887 64.1542 587.201 58.054ZM573.839 47.0691C571.042 49.6328 566.405 51.164 559.4 51.164H542.604V19.3H559.4C566.197 19.3 570.827 20.7884 573.741 23.3286C576.59 25.8116 578.212 29.6656 578.212 35.376C578.212 40.7182 576.655 44.4878 573.839 47.0691Z" stroke="white" stroke-width="5"/>
-                                <path d="M662.18 50.352V47.852H659.68H625.604V19.3H664H666.5V16.8V6V3.5H664H610H607.5V6V106.512V109.012H610H664H666.5V106.512V95.712V93.212H664H625.604V63.652H659.68H662.18V61.152V50.352Z" stroke="white" stroke-width="5"/>
-                                <path d="M734.688 107.626L735.411 108.868H736.848H752.544H756.957L754.688 105.083L731.21 65.9081C738.025 63.8743 743.416 60.3783 747.196 55.3139C751.569 49.5821 753.748 42.9516 753.748 35.52C753.748 29.4596 752.357 23.974 749.516 19.1345C746.642 14.2381 742.31 10.4224 736.662 7.64782C731.042 4.83998 724.253 3.5 716.4 3.5H684H681.5V6V106.368V108.868H684H697.104H699.604V106.368V67.828H711.507L734.688 107.626ZM730.667 23.5135L730.68 23.5253L730.692 23.5368C733.613 26.2202 735.212 30.0918 735.212 35.52C735.212 40.8245 733.626 44.8479 730.628 47.852C727.712 50.6817 723.126 52.316 716.4 52.316H699.604V19.3H716.4C723.282 19.3 727.865 20.8672 730.667 23.5135Z" stroke="white" stroke-width="5"/>
-                                <path d="M433.666 103.215L433.676 103.221L433.686 103.227C441.762 107.769 450.684 110.028 460.4 110.028C470.207 110.028 479.178 107.772 487.258 103.227L487.268 103.221L487.278 103.215C495.349 98.5746 501.716 92.1549 506.35 83.9946C511.002 75.8035 513.3 66.5379 513.3 56.264C513.3 45.9901 511.002 36.7246 506.35 28.5334C501.715 20.3719 495.345 13.9967 487.268 9.45081C479.188 4.80718 470.213 2.5 460.4 2.5C450.678 2.5 441.752 4.80948 433.676 9.45086C425.596 13.9984 419.182 20.4212 414.455 28.6688L414.455 28.6688L414.45 28.6774C409.8 36.8649 407.5 46.0814 407.5 56.264C407.5 66.447 409.801 75.7062 414.444 83.9831L414.453 83.999L414.462 84.0147C419.19 92.1641 425.6 98.5773 433.666 103.215ZM478.016 89.0899L478.008 89.0946L478 89.0993C472.848 92.1194 467.003 93.652 460.4 93.652C453.801 93.652 447.903 92.121 442.648 89.0945C437.509 86.0797 433.41 81.7771 430.351 76.1143C427.405 70.4827 425.892 63.8894 425.892 56.264C425.892 48.5327 427.409 41.9456 430.347 36.421C433.408 30.7516 437.511 26.4451 442.656 23.4287C447.803 20.4117 453.694 18.876 460.4 18.876C467.106 18.876 472.997 20.4117 478.144 23.4287C483.284 26.4421 487.333 30.7416 490.297 36.4L490.309 36.4212L490.32 36.4421C493.347 41.9621 494.908 48.5412 494.908 56.264C494.908 63.8839 493.35 70.4718 490.312 76.1007L490.305 76.1143L490.297 76.128C487.339 81.7754 483.25 86.0736 478.016 89.0899Z" stroke="white" stroke-width="5"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <p class="name">Marco Ramírez</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row h-25 mx-auto align-items-end ">
-            <div class="col-md-12">
-                <div class="row justify-content-center">
-                    <a href="#menu">
-                        <svg id="down" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 16.7979L6.48313 10.3125L27.5092 31.7144L48.5169 10.3125L55 16.7979L27.5092 44.6875L0 16.7979Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Section menu -->
-    <section class="menu vh-100" id="menu">
-        <div>
-            <ul>
-                <li><a href="#" data-text="Home">Home</a></li>
-                <li><a href="#about" data-text="About">About</a></li>
-                <li><a href="#services" data-text="Services">Services</a></li>
-                <li><a href="#work" data-text="Work">Work</a></li>
-                <li><a href="#contact" data-text="Contact">Contact</a></li>
-            </ul>
-        </div>
-    </section>
-    <!-- Section About -->
-    <section class="about vh-100 bg-info" id="about">
-        
-    </section>
-    <!-- Section Services -->
-    <section class="services vh-100 bg-warning" id="services">
-        
-    </section>
-    <!-- Section Work -->
-    <section class="work vh-100" id="work">
-        <div class="row vh-100 mx-auto align-items-center">
-            <div class="col-md-4">
-                <div class="row justify-content-center">
-                    <div class="cardp">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="images/home-page.svg" alt="">
-                                <h3>Landing Page</h3>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row justify-content-start">
+                                    <svg class="img-fluid" id="web" width="305" height="112" viewBox="0 0 305 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M143.321 6.6959L144.247 3.5H140.92H126.808H124.874L124.388 5.37145L104.722 81.0805L84.1486 5.34463L83.6475 3.5H81.736H67.048H65.1596L64.6433 5.31642L42.9767 81.5364L23.3892 5.37729L22.9064 3.5H20.968H7H3.70585L4.5922 6.67267L32.6722 107.185L33.188 109.031L35.1048 109.012L49.6488 108.868L51.4905 108.85L52.0189 107.085L73.7724 34.4441L94.7421 107.062L95.2638 108.868H97.144H111.832H113.71L114.233 107.064L143.321 6.6959Z" stroke="white" stroke-width="5"/>
+                                        <path d="M210.18 49.352V46.852H207.68H173.604V18.3H212H214.5V15.8V5V2.5H212H158H155.5V5V105.512V108.012H158H212H214.5V105.512V94.712V92.212H212H173.604V62.652H207.68H210.18V60.152V49.352Z" stroke="white" stroke-width="5"/>
+                                        <path d="M297.343 94.6159L297.35 94.6047L297.357 94.5934C300.211 90.0492 301.628 84.9767 301.628 79.44C301.628 75.0239 300.627 70.8481 298.628 66.9461C296.74 63.073 294.108 59.8079 290.746 57.1779C289.327 56.0347 287.831 55.0739 286.262 54.2987C289.194 52.6097 291.732 50.4847 293.853 47.9149C297.548 43.4588 299.324 37.9218 299.324 31.488C299.324 26.2488 298.007 21.4645 295.344 17.203C292.648 12.8894 288.646 9.56978 283.487 7.19331C278.273 4.6945 272.081 3.5 265 3.5H229H226.5V6V106.368V108.868H229H266.44C273.441 108.868 279.629 107.668 284.928 105.174L284.938 105.17L284.947 105.165C290.29 102.597 294.464 99.0941 297.343 94.6159ZM278.645 66.9449L278.659 66.9567L278.673 66.9684C281.865 69.6014 283.524 73.2224 283.524 78.144C283.524 82.9999 281.939 86.5237 278.942 89.0477C275.886 91.6206 271.444 93.068 265.288 93.068H244.604V62.644H264.856C270.863 62.644 275.37 64.1613 278.645 66.9449ZM264.136 46.844H244.604V19.3H263.848C269.841 19.3 274.019 20.6647 276.765 23.0181C279.485 25.3494 280.932 28.5922 280.932 33.072C280.932 37.5518 279.485 40.7946 276.765 43.1259C274.007 45.4899 269.914 46.844 264.136 46.844Z" stroke="white" stroke-width="5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row justify-content-center pt-3">
+                                    <svg class="img-fluid" id="dev" width="762" height="113" viewBox="0 0 762 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M65.7232 101.705L65.734 101.7C74.2191 97.4575 80.7417 91.3585 85.2228 83.417C89.7911 75.3951 92.028 66.0268 92.028 55.4C92.028 44.7761 89.7923 35.4099 85.2265 27.3895C80.7509 19.3585 74.2341 13.2096 65.7501 8.96396C57.3604 4.62127 47.4984 2.5 36.248 2.5H5H2.5V5V105.368V107.868H5H36.248C47.4889 107.868 57.3405 105.846 65.7232 101.705ZM63.9759 27.911L63.9819 27.9173L63.9881 27.9235C70.3235 34.3469 73.636 43.3924 73.636 55.4C73.636 67.3127 70.3708 76.2581 64.1381 82.5823C57.9347 88.7819 48.7761 92.068 36.248 92.068H20.604V18.156H36.248C48.6592 18.156 57.7658 21.526 63.9759 27.911Z" stroke="white" stroke-width="5"/>
+                                        <path d="M157.18 50.352V47.852H154.68H120.604V19.3H159H161.5V16.8V6V3.5H159H105H102.5V6V106.512V109.012H105H159H161.5V106.512V95.712V93.212H159H120.604V63.652H154.68H157.18V61.152V50.352Z" stroke="white" stroke-width="5"/>
+                                        <path d="M267.203 6.88259L268.479 3.5H264.864H251.04H249.29L248.691 5.14407L219.504 85.242L190.317 5.14407L189.718 3.5H187.968H174H170.385L171.661 6.88259L209.533 107.251L210.143 108.868H211.872H226.992H228.721L229.331 107.251L267.203 6.88259Z" stroke="white" stroke-width="5"/>
+                                        <path d="M329.18 50.352V47.852H326.68H292.604V19.3H331H333.5V16.8V6V3.5H331H277H274.5V6V106.512V109.012H277H331H333.5V106.512V95.712V93.212H331H292.604V63.652H326.68H329.18V61.152V50.352Z" stroke="white" stroke-width="5"/>
+                                        <path d="M402.74 95.712V93.212H400.24H367.604V6V3.5H365.104H352H349.5V6V106.368V108.868H352H400.24H402.74V106.368V95.712Z" stroke="white" stroke-width="5"/>
+                                        <path d="M587.201 58.054L587.202 58.0535C593.472 51.9924 596.604 44.3734 596.604 35.376C596.604 26.094 593.376 18.3543 586.876 12.3746C580.395 6.32374 571.095 3.5 559.4 3.5H527H524.5V6V106.368V108.868H527H540.104H542.604V106.368V66.964H559.4C571.449 66.964 580.887 64.1542 587.201 58.054ZM573.839 47.0691C571.042 49.6328 566.405 51.164 559.4 51.164H542.604V19.3H559.4C566.197 19.3 570.827 20.7884 573.741 23.3286C576.59 25.8116 578.212 29.6656 578.212 35.376C578.212 40.7182 576.655 44.4878 573.839 47.0691Z" stroke="white" stroke-width="5"/>
+                                        <path d="M662.18 50.352V47.852H659.68H625.604V19.3H664H666.5V16.8V6V3.5H664H610H607.5V6V106.512V109.012H610H664H666.5V106.512V95.712V93.212H664H625.604V63.652H659.68H662.18V61.152V50.352Z" stroke="white" stroke-width="5"/>
+                                        <path d="M734.688 107.626L735.411 108.868H736.848H752.544H756.957L754.688 105.083L731.21 65.9081C738.025 63.8743 743.416 60.3783 747.196 55.3139C751.569 49.5821 753.748 42.9516 753.748 35.52C753.748 29.4596 752.357 23.974 749.516 19.1345C746.642 14.2381 742.31 10.4224 736.662 7.64782C731.042 4.83998 724.253 3.5 716.4 3.5H684H681.5V6V106.368V108.868H684H697.104H699.604V106.368V67.828H711.507L734.688 107.626ZM730.667 23.5135L730.68 23.5253L730.692 23.5368C733.613 26.2202 735.212 30.0918 735.212 35.52C735.212 40.8245 733.626 44.8479 730.628 47.852C727.712 50.6817 723.126 52.316 716.4 52.316H699.604V19.3H716.4C723.282 19.3 727.865 20.8672 730.667 23.5135Z" stroke="white" stroke-width="5"/>
+                                        <path d="M433.666 103.215L433.676 103.221L433.686 103.227C441.762 107.769 450.684 110.028 460.4 110.028C470.207 110.028 479.178 107.772 487.258 103.227L487.268 103.221L487.278 103.215C495.349 98.5746 501.716 92.1549 506.35 83.9946C511.002 75.8035 513.3 66.5379 513.3 56.264C513.3 45.9901 511.002 36.7246 506.35 28.5334C501.715 20.3719 495.345 13.9967 487.268 9.45081C479.188 4.80718 470.213 2.5 460.4 2.5C450.678 2.5 441.752 4.80948 433.676 9.45086C425.596 13.9984 419.182 20.4212 414.455 28.6688L414.455 28.6688L414.45 28.6774C409.8 36.8649 407.5 46.0814 407.5 56.264C407.5 66.447 409.801 75.7062 414.444 83.9831L414.453 83.999L414.462 84.0147C419.19 92.1641 425.6 98.5773 433.666 103.215ZM478.016 89.0899L478.008 89.0946L478 89.0993C472.848 92.1194 467.003 93.652 460.4 93.652C453.801 93.652 447.903 92.121 442.648 89.0945C437.509 86.0797 433.41 81.7771 430.351 76.1143C427.405 70.4827 425.892 63.8894 425.892 56.264C425.892 48.5327 427.409 41.9456 430.347 36.421C433.408 30.7516 437.511 26.4451 442.656 23.4287C447.803 20.4117 453.694 18.876 460.4 18.876C467.106 18.876 472.997 20.4117 478.144 23.4287C483.284 26.4421 487.333 30.7416 490.297 36.4L490.309 36.4212L490.32 36.4421C493.347 41.9621 494.908 48.5412 494.908 56.264C494.908 63.8839 493.35 70.4718 490.312 76.1007L490.305 76.1143L490.297 76.128C487.339 81.7754 483.25 86.0736 478.016 89.0899Z" stroke="white" stroke-width="5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="name">Marco Ramírez</p>
                             </div>
                         </div>
-                        <div class="face face2">
-                            <div class="content">
+                    </div>
+                </div>
+                <div class="row h-25 mx-auto align-items-end ">
+                    <div class="col-md-12">
+                        <div class="row justify-content-center">
+                            <a href="#menu">
+                                <svg id="down" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 16.7979L6.48313 10.3125L27.5092 31.7144L48.5169 10.3125L55 16.7979L27.5092 44.6875L0 16.7979Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu Section -->
+        <section class="section menu vh-100" data-anchor="menu" id="">
+            <div>
+                <ul>
+                    <li><a href="#home" data-text="Home">Home</a></li>
+                    <li><a href="#about" data-text="About">About</a></li>
+                    <li><a href="#services" data-text="Services">Services</a></li>
+                    <li><a href="#work" data-text="Work">Work</a></li>
+                    <li><a href="#contact" data-text="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--About Section-->
+        <section class="section about vh-100 bg-white" data-anchor="about" id="">
+            <div class="custom-shape-divider-top-1609197899 w-100">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="row w-100 mb-5 align-items-end justify-content-center">
+                <h1>About me</h1>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="row justify-content-center">
+                            <img src="images/photo.png">
+                        </div>
+                        <div class="row justify-content-center">
+                            <h3>Who I am?</h3>
+                        </div>
+                        <div class="row justify-content-center">
+                            <p class="describe-me text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores cupiditate dolorem possimus aliquid, corporis eos dignissimos cum delectus, aspernatur perferendis consequatur voluptatem fugit at repellendus placeat tenetur commodi eligendi perspiciatis quibusdam dolor dolorum. Sit magnam asperiores voluptas earum temporibus. Iure eaque tempora unde vero est reiciendis saepe quo quos laudantium.</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <a href="https://www.linkedin.com/in/marco-ramírez-pérez-2b067b178" class="linkedin-btn" data-toggle="tooltip" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://t.me/Markorp" class="telegram-btn" data-toggle="tooltip" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://www.fiverr.com/markorp" class="fiverr-btn" data-toggle="tooltip" title="Fiverr">Fiverr</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row justify-content-center">
+                            <h3>Knowledge (5+ years):</h3>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
                                 <div class="row justify-content-center">
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                    <a href="#">Read more</a>
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>HTML</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fab fa-css3"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>CSS</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>JAVASCRIPT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fab fa-bootstrap"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>BOOTSTRAP</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>DATABASES</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fab fa-git-square"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>GIT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h3>Learning (1+ years):</h3>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>LARAVEL</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fab fa-vuejs"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>VUE JS</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p>REACT JS</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="row justify-content-center">
-                    <div class="cardp">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="images/under-construction.svg" alt="">
-                                <h3>Under Construction</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <div class="row justify-content-center">
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="custom-shape-divider-bottom-1609205182">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
             </div>
-            <div class="col-md-4">
-                <div class="row justify-content-center">
-                    <div class="cardp">
-                        <div class="face face1">
-                            <div class="content">
-                                <img src="images/online-shop.svg" alt="">
-                                <h3>Ecommerce Website</h3>
-                            </div>
-                        </div>
-                        <div class="face face2">
-                            <div class="content">
-                                <div class="row justify-content-center">
-                                    <p>Coming Soon.</p>
-                                    <!-- <a href="#">Read more</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </section>
+        <!--Services Section-->
+        <section class="section services vh-100" data-anchor="services" id="">
+            <div class="row w-100 align-items-center justify-content-center">
+                <h1>Services</h1>
             </div>
-        </div>
-    </section>
-    <!-- Section Contact -->
-    <section class="contact vh-100 bg-info" id="contact">
-        <div class="container">
-            <div class="row contact-content mx-auto align-items-center">
-                <div class="col-md-6 mb-3">
-                    <img class="img-fluid" src="images/message.svg" alt="image">
-                </div>
-                <div class="col-md-6 form-input">
+            <div class="container"></div>
+        </section>
+        <!-- Work Section-->
+        <section class="section work vh-100 bg-white" data-anchor="work" id="">
+            <div class="custom-shape-divider-top-1609224276">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="row w-100 align-items-center justify-content-center mb-5">
+                <h1>My projects</h1>
+            </div>
+            <div class="row w-100 mx-auto align-items-center">
+                <div class="col-md-4">
                     <div class="row justify-content-center">
-                        <h3 class="contact-text mb-3">Contact</h3>
+                        <div class="cardp">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="images/home-page.svg" alt="">
+                                    <h3>Landing Page</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div class="row justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a href="#">Open Gallery</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <form action="https://formspree.io/f/mknppqqd" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" autocomplete="off" required><span class="bar"></span>
-                            <label for="">Name</label>
+                </div>
+                <div class="col-md-4">
+                    <div class="row justify-content-center">
+                        <div class="cardp">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="images/under-construction.svg" alt="">
+                                    <h3>Under Construction</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div class="row justify-content-center">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                        <a href="#">Open Gallery</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" name="email" autocomplete="off" required><span class="bar"></span>
-                            <label for="">Email</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row justify-content-center">
+                        <div class="cardp">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="images/online-shop.svg" alt="">
+                                    <h3>Ecommerce Website</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div class="row justify-content-center">
+                                        <p>Coming Soon.</p>
+                                        <!-- <a href="#">Read more</a> -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" autocomplete="off" required><span class="bar"></span>
-                            <label for="">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" required></textarea><span class="bar"></span>
-                            <label for="">Message</label>
-                        </div>
-                        <div class="row justify-content-center pt-3">
-                            <button type="submit" class="btn btn-class justify-content-center">SEND<i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-          </div>
-    </section>
-    <div class="progress-wrap">
-		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-		</svg>
-	</div>
+            <div class="custom-shape-divider-bottom-1609224436">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="section contact vh-100 container-fluid" data-anchor="contact" id="">
+            <div class="row align-items-center">
+                <div class="container">
+                    <div class="row contact-content mx-auto align-items-center">
+                        <div class="col-md-6 mb-3">
+                            <img class="img-fluid" src="images/message.svg" alt="image">
+                        </div>
+                        <div class="col-md-6 form-input">
+                            <div class="row justify-content-center">
+                                <h3 class="contact-text mb-3">Contact</h3>
+                            </div>
+                            <form action="https://formspree.io/f/mknppqqd" method="POST">
+                                <div class="form-group">
+                                    <input type="text" name="name" autocomplete="off" required><span class="bar"></span>
+                                    <label for="">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" autocomplete="off" required><span class="bar"></span>
+                                    <label for="">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" autocomplete="off" required><span class="bar"></span>
+                                    <label for="">Subject</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" required></textarea><span class="bar"></span>
+                                    <label for="">Message</label>
+                                </div>
+                                <div class="row justify-content-center pt-3">
+                                    <button type="submit" class="btn btn-class justify-content-center">SEND<i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center">
+            <!-- Copyright -->
+                <div class="text-center p-3">
+                    <p>Copyright © 2020 | Marco Ramírez</p>
+                </div>
+            <!-- Copyright -->
+            </footer>
+        </section>
+
+    </div>
+
     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="js/up_buttom.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>

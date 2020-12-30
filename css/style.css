@@ -21,6 +21,9 @@ body{
     height: 100vh;
     background-color: #0B2239;
 }
+span{
+    background: #49ADE5 !important;
+}
 /* SVG Web */
 #web{
     margin-top: 25%;
@@ -505,6 +508,21 @@ ul li:hover a::before{
 .work .cardp .face.face2 .content a:hover{
     background: #0B2239;
     color: #fff;
+}
+.landing,.construction{
+    position: relative;
+    color: #fff;
+}
+.landing a,.construction a{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 4em;
+    color: #fff;
+    transition: 0.5s;
+}
+.landing a:hover,.construction a:hover{
+    transform: scale(1.1);
 }
 /* Top shape work section */
 .custom-shape-divider-top-1609224276 {
